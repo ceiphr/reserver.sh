@@ -8,10 +8,7 @@ import "prismjs/plugins/command-line/prism-command-line.js";
 import "prismjs/plugins/command-line/prism-command-line.css";
 
 const Home: NextPage = () => {
-    const codeSample = `# Installation
-curl https://get.reserver.sh | sh
-
-# Basic Usage
+    const codeSample = `curl https://get.reserver.sh | sh
 ./reserver.sh
 Reserving 5GB of space...
 Reservation complete!
@@ -87,7 +84,7 @@ Reservation removed. Good luck!`;
                         className="command-line"
                         data-user="user"
                         data-host="remotehost"
-                        data-output="1, 3-4, 6-7, 9-10"
+                        data-output="3-4, 6-7"
                     >
                         <code className="language-bash">{codeSample}</code>
                     </pre>
