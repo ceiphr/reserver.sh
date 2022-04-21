@@ -44,7 +44,6 @@ Reservation removed. Good luck!`;
                             href="https://brianschrader.com/archive/why-all-my-servers-have-an-8gb-empty-file/"
                             rel="noreferrer"
                             target="_blank"
-                            className="text-blue-500 hover:underline"
                         >
                             Why All My Servers Have An 8gb Empty File
                         </a>
@@ -68,16 +67,16 @@ Reservation removed. Good luck!`;
                             href="https://www.datadoghq.com/"
                             rel="noreferrer"
                             target="_blank"
-                            className="text-blue-500 hover:underline"
                         >
                             Datadog
                         </a>{" "}
                         to monitor disk usage on your servers. That is the tool
-                        that will really help you mitigate this potential
-                        problem. Think of reserver.sh as a sidekick. It&apos;s
-                        simple to use and is there if your primary tools somehow
-                        fail. It is a <span className="italic">mild</span>{" "}
-                        contingency plan if you can spare the disk space.
+                        that will <span className="italic">really</span> help
+                        you mitigate this potential problem. Think of
+                        reserver.sh as a sidekick. It&apos;s simple to use and
+                        is there if your primary tools somehow fail. It is a{" "}
+                        <span className="italic">mild</span> contingency plan if
+                        you can spare the disk space.
                     </p>
                     <h2 className="text-3xl">Installation & Basic Usage</h2>
                     <pre
@@ -91,38 +90,40 @@ Reservation removed. Good luck!`;
                     <h2 className="text-3xl">Resources</h2>
                     <ul className="list-disc ml-5">
                         <li>
-                            <a
-                                href="https://github.com/ceiphr/reserver#usage"
-                                className="text-blue-500 hover:underline"
-                            >
+                            <a href="https://github.com/ceiphr/reserver#usage">
                                 Documentation
                             </a>
                         </li>
                         <li>
-                            <a
-                                href="https://github.com/ceiphr/reserver"
-                                className="text-blue-500 hover:underline"
-                            >
-                                Reserver Script Source Code
+                            <a href="https://github.com/ceiphr/reserver">
+                                Reserver Source Code
                             </a>
                         </li>
                         <li>
-                            <a
-                                href="https://github.com/ceiphr/get.reserver.sh"
-                                className="text-blue-500 hover:underline"
-                            >
+                            <a href="https://github.com/ceiphr/get.reserver.sh">
                                 Installation Script Source Code
                             </a>
                         </li>
                         <li>
-                            <a
-                                href="https://github.com/ceiphr/reserver.sh"
-                                className="text-blue-500 hover:underline"
-                            >
+                            <a href="https://github.com/ceiphr/reserver.sh">
                                 Website Source Code
                             </a>
                         </li>
                     </ul>
+                    <footer>
+                        <p>
+                            Copyright © 2021 Ari Birnbaum (
+                            <a href="https://ceiphr.com/">Ceiphr</a>).
+                        </p>
+                        <p>
+                            Reserver, it&apos;s installation script and this
+                            website are all{" "}
+                            <a href="https://github.com/ceiphr/reserver/blob/main/LICENSE">
+                                MIT licensed
+                            </a>
+                            .
+                        </p>
+                    </footer>
                 </div>
             </main>
         </div>

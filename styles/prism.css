@@ -34,7 +34,6 @@
     content: attr(data-prompt);
 }
 
-
 .command-line-prompt span[data-prompt]:before {
     content: attr(data-prompt);
 }
@@ -161,4 +160,122 @@ pre[class*="language-"] {
 
 .token.italic {
     font-style: italic;
+}
+
+@media (prefers-color-scheme: dark) {
+    .command-line-prompt span:before {
+        color: white;
+    }
+    /*
+ * Based on Plugin: Syntax Highlighter CB
+ * Plugin URI: http://wp.tutsplus.com/tutorials/plugins/adding-a-syntax-highlighter-shortcode-using-prism-js
+ * Description: Highlight your code snippets with an easy to use shortcode based on Lea Verou's Prism.js.
+ * Version: 1.0.0
+ * Author: c.bavota
+ * Author URI: http://bavotasan.comhttp://wp.tutsplus.com/tutorials/plugins/adding-a-syntax-highlighter-shortcode-using-prism-js/ */
+    /* http://cbavota.bitbucket.org/syntax-highlighter/  */
+
+    /* =====   ===== */
+    code[class*="language-"],
+    pre[class*="language-"] {
+        color: #fff;
+        text-shadow: 0 1px 1px #000;
+        direction: ltr;
+        text-align: left;
+        word-spacing: normal;
+        white-space: pre;
+        word-wrap: normal;
+        background: none;
+        border: 0;
+    }
+
+    pre[class*="language-"] {
+        border: 1px solid #595959;
+        border-radius: 8px;
+        background: black;  
+    }
+
+    .token.comment,
+    .token.prolog,
+    .token.doctype,
+    .token.cdata {
+        color: #797979;
+    }
+
+    .token.selector,
+    .token.operator,
+    .token.punctuation {
+        color: #fff;
+    }
+
+    .token.namespace {
+        opacity: 0.7;
+    }
+
+    .token.tag,
+    .token.boolean {
+        color: #ffd893;
+    }
+
+    .token.atrule,
+    .token.attr-value,
+    .token.hex,
+    .token.string {
+        color: #b0c975;
+    }
+
+    .token.property,
+    .token.entity,
+    .token.url,
+    .token.attr-name,
+    .token.keyword {
+        color: #c27628;
+    }
+
+    .token.regex {
+        color: #9b71c6;
+    }
+
+    .token.entity {
+        cursor: help;
+    }
+
+    .token.function,
+    .token.constant {
+        color: #e5a638;
+    }
+
+    .token.variable {
+        color: #fdfba8;
+    }
+
+    .token.number {
+        color: #8799b0;
+    }
+
+    .token.important,
+    .token.deliminator {
+        color: #e45734;
+    }
+
+    /* Line highlight plugin */
+    .line-highlight.line-highlight {
+        background: rgba(255, 255, 255, 0.2);
+    }
+
+    .line-highlight.line-highlight:before,
+    .line-highlight.line-highlight[data-end]:after {
+        top: 0.3em;
+        background-color: rgba(255, 255, 255, 0.3);
+        color: #fff;
+        -moz-border-radius: 8px;
+        -webkit-border-radius: 8px;
+        border-radius: 8px;
+    }
+
+    /* for line numbers */
+    /* span instead of span:before for a two-toned border */
+    .line-numbers .line-numbers-rows > span {
+        border-right: 3px #d9d336 solid;
+    }
 }
