@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import { useEffect } from "react";
 import Head from "next/head";
+import Image from "next/image";
 import Latex from "react-latex-next";
 import prism from "prismjs";
 import "prismjs/components/prism-bash";
@@ -35,6 +36,31 @@ Reservation removed. Good luck!`;
                 <h1 className="text-6xl">
                     <Latex>{"$\\R \\text{eserver}$"}</Latex>
                 </h1>
+                <div className="flex w-fit gap-2 my-2">
+                    <a href="https://github.com/ceiphr/reserver/actions/workflows/main.yml">
+                        <Image
+                            src="https://img.shields.io/github/workflow/status/ceiphr/reserver/CI?color=green&logo=github"
+                            alt="Reserver"
+                            layout="fixed"
+                            width="105px"
+                            height="20px"
+                        />
+                    </a>
+                    <Image
+                        src="https://img.shields.io/github/v/release/ceiphr/reserver?color=green"
+                        alt="Reserver"
+                        layout="fixed"
+                        width="94px"
+                        height="20px"
+                    />
+                    <Image
+                        src="https://img.shields.io/badge/bash-v4.4%5E-green?&logo=gnubash&logoColor=white"
+                        alt="Reserver"
+                        layout="fixed"
+                        width="97px"
+                        height="20px"
+                    />
+                </div>
                 <div className="text-xl space-y-5">
                     <p>
                         A <span className="italic">very mild</span> contingency
