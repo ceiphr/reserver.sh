@@ -24,8 +24,8 @@ Reservation removed. Good luck!`;
             targets: ".slide-in",
             translateY: [20, 0],
             opacity: [0, 1],
-            delay: anime.stagger(200, { start: 400 }),
-            duration: 600,
+            delay: anime.stagger(150, { start: 200 }),
+            duration: 1000,
             easing: "easeOutQuart",
         });
     }, []);
@@ -148,7 +148,7 @@ Reservation removed. Good luck!`;
                             </a>
                         </li>
                     </ul>
-                    <footer>
+                    <footer className="slide-in">
                         <p>
                             Copyright © 2021 Ari Birnbaum (
                             <a href="https://ceiphr.com/">Ceiphr</a>).
